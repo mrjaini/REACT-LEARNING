@@ -10,6 +10,10 @@
 ## --------Git repository ko Link krne k liye
 -> git remote add origin <url>
 
+##---------Git repository ka origin set krne k liye
+->git remote set-url origin https://github.com/username/correct-repo.git
+
+
 ##---------Jab hume same branch m bar bar work karna ho toh, ek bar ye chala do
 ->git push -u origin <branch>
 
