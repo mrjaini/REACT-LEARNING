@@ -4,6 +4,9 @@
 ## --------Git ki repository ko check krne k liye 
 ->git remote -v
 
+##---------Git repository ko remove krne k liye
+->git remote remove origin
+
 ## --------Git repository ko Link krne k liye
 -> git remote add origin <url>
 
