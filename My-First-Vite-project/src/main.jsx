@@ -43,5 +43,5 @@ const ele = React.createElement(
   */
 
 createRoot(document.getElementById('root')).render(
-  <App/>
+  < App />
 )
