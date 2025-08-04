@@ -7,7 +7,10 @@
 ##---------Git repository ko remove krne k liye
 ->git remote remove origin
 
-## --------Git repository ko Link krne k liye
+##---------Git repo ko change krne k liye 
+->git remote set-url origin https://github.com/username/correct-repo.git
+
+## --------Git repository ko first time Link krne k liye
 -> git remote add origin <url>
 
 ##---------Jab hume same branch m bar bar work karna ho toh, ek bar ye chala do
