@@ -1,0 +1,73 @@
+## --------File ya Folder ko git file bnane k liye 
+-> git init
+
+## --------Git ki repository ko check krne k liye 
+->git remote -v
+
+## --------Git repository ko Link krne k liye
+-> git remote add origin <url>
+
+##---------Jab hume same branch m bar bar work karna ho toh, ek bar ye chala do
+->git push -u origin <branch>
+
+##---------Github pr file ya folder push krna k liye
+->git push origin main <url>
+->git push -> "Jb uper(-u) wali command chala di ho first time"
+
+##---------GitHub pr changes overwrite krna ho
+->git push --force
+
+##---------GitHub se repository clone krni ho
+->git clone <url>
+
+##---------Git file ka status dekhna ho toh
+-> git status
+
+##---------Github pr file add krne k liye 
+->git add <filename> -> specific file k liye
+->git add . -> all file k liye
+
+##---------Git file ko commit krne k liye
+->git commit -m"kooi bhi msg"
+
+##---------Git pr file ko add or commit krne k liye ek sath
+->git commit -am "koi msg"
+
+##---------Github se code lena ho toh
+->git pull origin <branch>
+
+##---------Github k purane commit dekhna
+->git log
+
+##---------GitHub pr last commit change krna ho toh
+->git commit --amend -> iske baad niche wali command chlani h
+->git push --force
+
+##---------File ko staging se hatana ho
+->git reset HEAD <file>
+
+##---------Last commit undo (changes bache rahenge) krna ho 
+->git reset --soft HEAD~1	
+
+##---------Last commit + changes dono hatana ho
+->git reset --hard HEAD~1
+
+#----------Untracked files/folders hatana ho
+->git clean -fd
+
+##---------File delete + git se hatana ho
+->git rm <file>	
+
+##---------Git se delete file ko waps laane k liye
+->git reflog
+
+
+---------------------Branch Command----------------------------
+| Command                  | Purpose                           |
+| ------------------------ | --------------------------------- |
+| `git branch`             | Saari branches dekhna             |
+| `git branch <name>`      | Nayi branch banana                |
+| `git checkout <name>`    | Branch change karna               |
+| `git checkout -b <name>` | Nayi branch banana + switch karna |
+| `git merge <branch>`     | Do branches merge karna           |
+| `git branch -d <name>`   | Branch delete karna               |
