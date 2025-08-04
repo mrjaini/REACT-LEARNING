@@ -65,8 +65,11 @@
 #----------Untracked files/folders hatana ho
 ->git clean -fd
 
-##---------File delete + git se hatana ho
-->git rm <file>	
+##---------File delete local + git se hatana ho
+     =>follow below all three command
+->git rm <file>
+->git commit -m"msg"
+->git push	
 
 ##---------Git se delete file ko waps laane k liye
 ->git reflog
