@@ -31,7 +31,7 @@
 ->git clone <url>
 
 ##---------Git file ka status dekhna ho toh
--> git status
+->git status
 
 ##---------Github pr file add krne k liye 
 ->git add <filename> -> specific file k liye
