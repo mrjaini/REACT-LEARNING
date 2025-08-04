@@ -19,10 +19,10 @@
 
 ##---------Jab hume same branch m bar bar work karna ho toh, ek bar ye chala do
 ->git push -u origin <branch>
+->git push -> "Jb uper wali command chala di ho first time"
 
 ##---------Github pr file ya folder push krna k liye
 ->git push origin main <url>
-->git push -> "Jb uper(-u) wali command chala di ho first time"
 
 ##---------GitHub pr changes overwrite krna ho
 ->git push --force
