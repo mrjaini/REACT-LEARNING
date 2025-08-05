@@ -71,6 +71,9 @@
 ->git commit -m"msg"
 ->git push	
 
+##---------Agar file rm command se delete krdi lekin commit nhi ki toh waps laane k liye
+->git restore file.txt
+
 ##---------Git se delete file ko waps laane k liye
 ->git reflog
 
