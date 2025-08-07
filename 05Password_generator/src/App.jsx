@@ -26,9 +26,16 @@ function App() {
     window.navigator.clipboard.writeText(password)
   },[password])
 
-  const hoverf = useCallback(() => {
+  // Jab cursor hover kare "Copy" button pr tab text select ho jaye
+  function handleHover() { 
     passRef.current?.select();
-  } , [password])
+  }
+
+  // Jab cursor hover kare "Copy" button pr tab text select hat jaye
+  function handleHoverLeave(){
+    window.getSelection()?.removeAllRanges();
+
+  }
   useEffect(() => {
     passwordGenerator();
   }, [number,length, characters])
@@ -50,11 +57,13 @@ function App() {
 
           <button
           onClick= {passtoClip}
-           className='outline-none text-black bg-blue-500 font-bold shrink-0 px-4 '>Copy</button>
+          onMouseEnter={handleHover}
+          onMouseLeave={handleHoverLeave}
+           className='outline-none text-black bg-blue-500 font-bold shrink-0 px-4 hover:bg-blue-300'>Copy</button>
         </div>
+
+
         <div className='flex text-sm gap-x-4 mx-5'>
-
-
           <div className='flex items-center gap-x-1'>
             <input 
             type="range"
