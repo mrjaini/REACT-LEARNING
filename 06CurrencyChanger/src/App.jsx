@@ -1,14 +1,14 @@
 import { useState } from 'react'
-import { InputBox } from '../componennts'
-import {useCurrency} from '../hooks/useCurrency'
+import { InputBox } from '../components'
+import useCurrency from '../hooks/useCurrency'
 
 function App() {
-  const [amount, setAmount] = useState(0)
-  const [from , setFrom] = useState("usd")
-  const [to , setTo] = useState("inr")
-  const  [camount , setCamount] = useState(0)
-  const currencyinfo = useCurrency(from)
-  const options = Object.keys(currencyinfo)
+  const [amount, setAmount] = useState(0);
+  const [from , setFrom] = useState("usd");
+  const [to , setTo] = useState("inr");
+  const  [camount , setCamount] = useState(0);
+  const currencyinfo = useCurrency(from);
+  const options = Object.keys(currencyinfo);
 
   const convert = () =>{
     setCamount(amount * currencyinfo[to])
@@ -25,8 +25,7 @@ function App() {
         <div
             className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat"
             style={{
-                backgroundImage: `url(https://www.pexels.com/photo/marketing-man-laptop-capital-7567550/)`,
-            }}
+        backgroundImage: `url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_4r5rYX-jmkZp6lUs-mciD1xlSJ0n7dx5uw&s')`,}}
         >
             <div className="w-full">
                 <div className="w-full max-w-md mx-auto border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-white/30">
@@ -43,9 +42,10 @@ function App() {
                                 amount={amount}
                                 currencyOption={options}
                                 onCurrencyChange={(currency) => 
-                                  setAmount(amount)
+                                  setAmount(currency)
                                 }
                                 selectCurrency={from}
+                                onAmountChange={(amount) => setAmount(amount)}
                                 
                             />
                         </div>
@@ -71,14 +71,13 @@ function App() {
                             />
                         </div>
                         <button type="submit" className="w-full bg-blue-600 text-white px-4 py-3 rounded-lg">
-                            Convert {from.toUpperCase} to {to.toUpperCase}
+                            Convert {from} to {to}
                         </button>
                     </form>
                 </div>
             </div>
         </div>
-    );
-  
+  )
 }
 
 export default App
