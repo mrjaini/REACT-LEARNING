@@ -3,10 +3,10 @@ import { InputBox } from '../components'
 import useCurrency from '../hooks/useCurrency'
 
 function App() {
-  const [amount, setAmount] = useState(0);
+  const [amount, setAmount] = useState();
   const [from , setFrom] = useState("usd");
   const [to , setTo] = useState("inr");
-  const  [camount , setCamount] = useState(0);
+  const  [camount , setCamount] = useState();
   const currencyinfo = useCurrency(from);
   const options = Object.keys(currencyinfo);
 
@@ -29,6 +29,7 @@ function App() {
         >
             <div className="w-full">
                 <div className="w-full max-w-md mx-auto border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-white/30">
+                <h1 className='mx-auto text-center font-bold text-3xl mb-3'>Currency Convertor</h1>
                     <form
                         onSubmit={(e) => {
                             e.preventDefault();
@@ -41,8 +42,8 @@ function App() {
                                 label="From"
                                 amount={amount}
                                 currencyOption={options}
-                                onCurrencyChange={(currency) => 
-                                  setAmount(currency)
+                                onCurrencyChange={(amount) => 
+                                  setFrom(amount)
                                 }
                                 selectCurrency={from}
                                 onAmountChange={(amount) => setAmount(amount)}
@@ -71,7 +72,7 @@ function App() {
                             />
                         </div>
                         <button type="submit" className="w-full bg-blue-600 text-white px-4 py-3 rounded-lg">
-                            Convert {from} to {to}
+                            Convert {from.toUpperCase()} to {to.toUpperCase()}
                         </button>
                     </form>
                 </div>
