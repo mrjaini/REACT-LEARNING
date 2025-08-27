@@ -1,7 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import About from "../About/About";
 export default function Home() {
     return (
-        <div className="mx-auto w-full max-w-7xl">
+        <><div className="mx-auto w-full max-w-7xl">
             <aside className="relative overflow-hidden text-black rounded-lg sm:mx-16 mx-2 sm:py-16">
                 <div className="relative z-10 max-w-screen-xl px-4  pb-20 pt-10 sm:py-24 mx-auto sm:px-6 lg:px-8">
                     <div className="max-w-xl sm:mt-1 mt-80 space-y-8 text-center sm:text-right sm:ml-auto">
@@ -30,15 +32,16 @@ export default function Home() {
                 </div>
 
                 <div className="absolute inset-0 w-full sm:my-20 sm:pt-1 pt-12 h-full ">
-                    <img className="w-96" src="https://i.ibb.co/5BCcDYB/Remote2.png" alt="image1" />
+                    <img className="w-96" src="https://imgs.search.brave.com/dIJ1a6cgWM4wPjbzsGieJI-S4pLKLDB_JpES2RFLOYA/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG5p/Lmljb25zY291dC5j/b20vaWxsdXN0cmF0/aW9uL3ByZW1pdW0v/dGh1bWIvZ2lybC1o/b2xkaW5nLWJvb2st/d2hpbGUtc3R1ZHlp/bmctaWxsdXN0cmF0/aW9uLXN2Zy1wbmct/ZG93bmxvYWQtMTE3/MTE3NzUucG5n" alt="image1" />
                 </div>
             </aside>
 
             <div className="grid  place-items-center sm:mt-20">
-                <img className="sm:w-96 w-48" src="https://i.ibb.co/2M7rtLk/Remote1.png" alt="image2" />
+                <img className="sm:w-96 w-48" src="https://imgs.search.brave.com/dIJ1a6cgWM4wPjbzsGieJI-S4pLKLDB_JpES2RFLOYA/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG5p/Lmljb25zY291dC5j/b20vaWxsdXN0cmF0/aW9uL3ByZW1pdW0v/dGh1bWIvZ2lybC1o/b2xkaW5nLWJvb2st/d2hpbGUtc3R1ZHlp/bmctaWxsdXN0cmF0/aW9uLXN2Zy1wbmct/ZG93bmxvYWQtMTE3/MTE3NzUucG5n" alt="image2" />
             </div>
 
             <h1 className="text-center text-2xl sm:text-5xl py-10 font-medium">Lorem Ipsum Yojo</h1>
         </div>
+        </>
     );
 }
