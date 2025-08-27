@@ -6,18 +6,19 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './component/home/Home.jsx'
 import About from './component/About/About.jsx'
 import Contact from './component/contact/Contact.jsx'
+import Github from './component/github/Github.jsx'
 
 const router = createBrowserRouter([
   {
     path :'/',
     element : <App/>,
     children : [
+      // {
+      //   index: true,
+      //   element: <Home />
+      // },
       {
-        index: true,
-        element: <Home />
-      },
-      {
-        path : "home",
+        path : "",
         element : <Home/>
       },
       {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
       {
         path : "contact",
         element : <Contact />
+      },
+      {
+        path : "github",
+        element : <Github />
       }
     ]
   }
