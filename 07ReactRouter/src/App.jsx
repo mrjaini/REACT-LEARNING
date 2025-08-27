@@ -1,8 +1,8 @@
 import React from 'react'
-import Header from './component/header/Header'
-import Footer from './component/footer/Footer'
+import Header from './component/Header/Header'
+import Footer from './component/Footer/Footer'
 import { Outlet } from 'react-router-dom'
-import Home from './component/home/Home'
+import Home from './component/Home/Home'
 function App() {
   return (
     <>
